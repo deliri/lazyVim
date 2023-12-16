@@ -1,8 +1,6 @@
 -- Bootstrap LazyVim and other plugins
 require("config.lazy")
 
-
-
 -- =========================================
 -- Autocommands
 -- =========================================
@@ -33,5 +31,8 @@ vim.api.nvim_create_autocmd("FileType", {
     command = "setlocal tabstop=8 shiftwidth=8",
 })
 
+-- Sets the number of screen lines to keep above and below the cursor
+vim.o.scrolloff = 999
 
-
+-- Sets the number of screen columns to keep to the left and right of the cursor
+vim.o.sidescrolloff = 999

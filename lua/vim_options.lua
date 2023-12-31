@@ -1,8 +1,3 @@
--- Bootstrap LazyVim and other plugins
-require("config.lazy")
-require("vim_options")
-require("lazy").setup("plugins")
-
 -- =========================================
 -- Autocommands
 -- =========================================
